@@ -3,7 +3,6 @@
 
 ## 1일차
 - 파이썬 개발환경
-
     1. github 가입
     2. git 설치
     3. githubdesktop 설치
