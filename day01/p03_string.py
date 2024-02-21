@@ -25,8 +25,35 @@ print(d)
 
 # 문자열 연산은 +,*
 
-before = 'i wanna go to '
+before = 'I wanna go to '
 after = 'Korea'
 print(before + after) # +는 문자열을 합쳐서 하나의 문자열로 만듦
 
 print(after * 3) # 문자열을 몇 번 반복
+
+
+##문자열 길이 구하기
+print('글자길이 = ' ,len(before))
+print('한글글자길이', len('안녕하세요'))
+
+
+
+##문자열 인덱싱과 슬라이싱
+cp = 'Life is too short, You need Python'
+
+#슬라이싱
+print(cp[8])
+print(cp[17])
+
+# cp[8] = 'd' # 문자열은 배열이긴 하나, 값을 변경할 수 없다
+print(cp[12:16 +1]) # : 뒤에 있는 숫자는 항상 +1
+
+print(ascii('안'), ascii('녕'),ascii('하'),ascii('세'),ascii('요'))
+
+# 기존 문자열로 새로운 문자열을 만들 때는 슬라이싱, 다른 문자열로 대체
+print(cp[0:7], 'long', cp[17:])
+
+print(cp[-1])
+print(cp[-6:-1])
+print(cp[-6:])
+print(cp[-11:-7])
