@@ -97,6 +97,7 @@
                 print(f'나의 이름은{name}입니다. 나이는 {age}입니다.')
 
             - 문자열 관련 함수들
+                ```python
                 a = 'Life is too short, You need Python'
                 print(a.count('Life'))
                 print(a.count('o')) # 문자열 중 o의 개수
@@ -112,9 +113,14 @@
                 print(f'++{origin.lstrip()}++')
                 print(f'++{origin.rstrip()}++')
                 print(f'++{origin.strip()}++')
+                ```
+                
+                    ```python
+                     print(cp.replace('too','').replace(' short','long'))
+                    문자열.split(' ') 공백을 기준으로 문자열을 잘라 배열로 반환
+                    ```
+                    
 
-                print(cp.replace('too','').replace(' short','long'))
-                문자열.split(' ') 공백을 기준으로 문자열을 잘라 배열로 반환
 
         02 -3 리스트 자료형
 
