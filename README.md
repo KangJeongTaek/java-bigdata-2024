@@ -4,12 +4,12 @@
 ## 1일차
 - 파이썬 개발환경
 
-    github 가입
-    git 설치
-    githubdesktop 설치
-    Python 설치
-    visualstudiocode 설치
-    나눔고딕 코딩 글꼴 설치
+    1. github 가입
+    2. git 설치
+    3. githubdesktop 설치
+    4. Python 설치
+    5. visualstudiocode 설치
+    6. 나눔고딕 코딩 글꼴 설치
 
 
 - 파이썬 학습
