@@ -71,7 +71,7 @@ print('현재 온도는 %d도 입니다.'%temp)
 
 print("현재 온도는 {0}도 입니다." .format(temp))
 
-## 날짜를 포매승로 만들 때
+## 날짜를 포맷으로 만들 때
 month = 2
 day = 21
 hour = 15
@@ -81,3 +81,43 @@ print('오늘은 {0:02d}월 {1:02d}일 {2:02d}시 {3:02d}분입니다.'.format(m
 income = 6000000 # 육백만원
 
 print('이번 달 매출액은 {0:,d}원 입니다.'.format(income))
+
+PI = 3.1415926536
+print('파이는{0:.2f}'.format(PI))
+print('{0:f}'.format(PI)) #실수형은 d(정수형 포맷팅) 불가
+
+# f 문자열 포매팅
+name = '홍길동'
+age = 30
+print(f'나의 이름은{name}입니다. 나이는 {age}세 입니다.')
+
+name = '강정택'
+age = 29
+cont =f'나는 {name}이고, 나이는 {age}세 입니다.'
+print(cont)
+print(f'나는 {name:>10}이고, 나이는 {age:03.1f}세 입니다.') # 정수는 f포맷 사용가능. 실수는 d포맷 사용 불가능
+
+
+## 문자열 관련 함수들
+
+a = 'Life is too short, You need Python'
+print(a.count('Life'))
+print(a.count('o')) # 문자열 중 o의 개수
+print(a.find('sh')) #문자가 처음 나온 위치 < 찾지 못 하면 -1 반환
+print(a.index('t')) #첫번째 t의 위치 < 찾지 못 하면 오류 #index()는 count()로 갯수가 0이 아닐 때만 호출]
+print(','.join('abcde')) #문자열 abcde 사이에 ','를 삽입
+print(a.upper()) #대문자 만들기
+print(a.lower()) #소문자 만들기
+print(a.capitalize()) #제일 첫번째 글자만 대문자로 만들기
+
+origin = '      Hi        '
+print(f'++{origin}++')
+print(f'++{origin.lstrip()}++')
+print(f'++{origin.rstrip()}++')
+print(f'++{origin.strip()}++')
+
+print(cp.replace('too','').replace(' short','long'))
+cpwords = cp.split(' ')
+print(cpwords)
+
+
