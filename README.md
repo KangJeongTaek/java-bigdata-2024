@@ -237,6 +237,24 @@
                 ```
 
         - #### 02-7 변수
+            - 얕은 복사
+                ```python
+                a = [1,2,3]
+                b = a #얕은 복사, 같은 주소값을 공유한다.
+                print(id(a))
+                print(id(b))
+                del b[2]
+                print(a) #a 안에 있는 3도 삭제 된다.
+                ```
+            - copy 모듈 이용하기(깊은 복사)
+                ```python
+                from copy import copy
+                a = [1,2,3]
+                b = a
+                d = copy(a) #깊은 복사, 다른 주소값을 가진다.
+                del d[2]
+                print(a)
+                ```
         - #### 02-8 제어문
 
 ## 3일차
