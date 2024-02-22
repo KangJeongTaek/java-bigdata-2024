@@ -76,8 +76,8 @@
                 파이썬에서는 %d,%s,%c 등 포맷스티링용 연산자 사용 빈도가 낮다.
 
             - format 함수로 포맷팅(가장 일반적)
+            ```Python
                 ## 날짜를 포맷으로 만들 때
-                ```Python
                 month = 2
                 day = 21
                 hour = 15
@@ -98,7 +98,7 @@
                 age = 30
                 print(f'나의 이름은{name}입니다. 나이는 {age}입니다.')
                 ```
-                
+
             - 문자열 관련 함수들
                 ```Python
                 a = 'Life is too short, You need Python'
