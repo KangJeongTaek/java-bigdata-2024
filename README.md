@@ -5,16 +5,24 @@
 - 파이썬 개발환경
 
         1. github 가입
+        https://giyhub.com/
+
         2. git 설치
+        https://get=scm.com/download/win
+
         3. githubdesktop 설치
+        https://desktop.github.com/
+
         4. Python 설치
+        https://python.org
+        
         5. visualstudiocode 설치
         6. 나눔고딕 코딩 글꼴 설치
 
 
 - 파이썬 학습
 
-    - 01 파이썬 개요
+     - 01 파이썬 개요
 
         - 01-1 파이썬이란?
             - 1990년, 네덜란드계 귀도 반 로섬이 발표한 고급 프로그래밍 언어
@@ -130,7 +138,7 @@
         
 ## 2일차
 
-- 파이썬 학습
+### 파이썬 학습
 
     - 파이썬 기초문법
         - 딕셔너리. 집합
