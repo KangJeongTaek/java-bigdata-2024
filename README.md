@@ -273,8 +273,53 @@
                    실행문_문장2
                     ...
                 ```
+                - and , or, not
+                    ```python
+                    #x and y | x와 y 둘 다 True여야 True
+                    #x or y | x와 y 둘 중 하나가 True여도 True
+                    #not | True는 False로 False는 True로
+
+                    ##print() end옵션, sep옵션
+                    print(1 in [1,3,5,7,9], end='') # True13579,test
+                    print('13579','test',sep=',')
+                    ```
+
+                - 조건부 표현식
+                    ```python
+                    #파이썬에선 조건 연산자를 잘 안 쓴다
+                    'hi' if True(조건식) else 'bye'
+                    ```
 
             - for 문
+                ```python
+                #for item in 반복할 객체(iterable):
+                #   ...
+
+                ```
+
+                ```python
+                range(0,10)
+                print(list(range(0,10))) #0부터 9까지
+
+                print(list(range(0,11,2))) #0부터 짝수로
+
+                print(list(range(1,10,2))) #1부터 홀수로
+
+                print(list(range(10,0,-2))) # 10,8,6,4,2
+
+                print(list(range(4,101,4))) # 4부터 4의 배수를 100까지 표현
+
+
+                res = 0
+                for i in range(1,11):
+                    res += 1 ## 55
+
+                ```
+
+                ```python
+                ##list comprehension / 리스트 내포
+                [i for i in range(10)]
+                ```
             - while 문
 
 ## 3일차
