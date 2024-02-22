@@ -6,20 +6,15 @@
 
     - [github](https://giyhub.com/) 가입
 
-    
-
     - [git](https://get=scm.com/download/win) 설치
 
     - [githubdesktop](https://desktop.github.com/) 설치
 
-    - Python 설치
+    - [Python](https://python.org) 설치
 
-    [Python](https://python.org)
+    - [visualstudiocode](https://code.visualstudio.com/) 설치
 
-    - visualstudiocode 설치
-
-    [visualstudiocode](https://code.visualstudio.com/)
-    - 나눔고딕 코딩 글꼴 설치
+    - [나눔고딕 코딩 글꼴](https://github.com/naver/nanumfont) 설치
 
 
 - 파이썬 학습
