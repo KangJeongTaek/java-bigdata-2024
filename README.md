@@ -44,7 +44,7 @@
         
         - ##### 01-4 파이썬으로 할 수 없는 일
             - 시스템과 밀접한 프로그래밍 영역'
-            - 모바일 프로그램이 <- 현재는 가능
+            - 모바일 프로그램 <- 현재는 가능
 
 
     - #### 02 파이썬 기초, 자료형
@@ -74,7 +74,7 @@
                 ```
             - 문자열 연산
                 ```python
-                # +,* 
+                # +,*
                 # +는 문자열을 합쳐서 하나의 문자열을 만듦
                 # *는 문자열을 정수만큼 반복
                 ```
@@ -210,7 +210,26 @@
                 ```
         - #### 02-5 불 자료형
             - 참 또는 거짓
+                ```python
+                a = True # T 대문자
+                b = False # F 대문자
+                ```
+            - 값이 있는 자료형은 참이며 값이 없으면 거짓이다
+                ```python
+                print(bool(0)) #False
+                print(bool(1)) #True
+                print(bool(-1)) #True
+                print(bool({1,2,3})) # True
+                print(bool({})) #False
+                print(bool('')) #False
+                print(bool('H')) #True
+                print(bool(None)) #False
+
+                #빈값,None,0는 False 이 외의 값들은 True
+                ```
+
         - #### 02-6 None형
+            - None
         - #### 02-7 제어문
 
 ## 3일차
