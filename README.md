@@ -4,19 +4,21 @@
 ## 1일차
 - 파이썬 개발환경
 
-    - github 가입
-    [github](https://giyhub.com/)
+    - [github](https://giyhub.com/) 가입
 
-    - git 설치
-    [git](https://get=scm.com/download/win)
+    
 
-    - githubdesktop 설치
-    [githubdesktop](https://desktop.github.com/)
+    - [git](https://get=scm.com/download/win) 설치
+
+    - [githubdesktop](https://desktop.github.com/) 설치
 
     - Python 설치
+
     [Python](https://python.org)
 
     - visualstudiocode 설치
+
+    [visualstudiocode](https://code.visualstudio.com/)
     - 나눔고딕 코딩 글꼴 설치
 
 
