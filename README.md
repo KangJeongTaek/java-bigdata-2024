@@ -77,6 +77,7 @@
 
             - format 함수로 포맷팅(가장 일반적)
                 ## 날짜를 포맷으로 만들 때
+                ```Python
                 month = 2
                 day = 21
                 hour = 15
@@ -90,12 +91,14 @@
                 PI = 3.1415926536
                 print('파이는{0:.2f}'.format(PI))
                 print('{0:f}'.format(PI)) #실수형은 d(정수형 포맷팅) 불가
-
+                ```
             - f문자열 포매팅
+                ```Python
                 name = '홍길동'
                 age = 30
                 print(f'나의 이름은{name}입니다. 나이는 {age}입니다.')
-
+                ```
+                
             - 문자열 관련 함수들
                 ```Python
                 a = 'Life is too short, You need Python'
