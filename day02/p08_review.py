@@ -1,7 +1,9 @@
 #file : p08_review.py
 #desc : 변수 리뷰
 
+
 a = 13
+print('a는 ' , end='')
 if (a % 2 == 0):
     print('짝수')
 else :
