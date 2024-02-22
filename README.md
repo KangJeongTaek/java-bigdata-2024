@@ -2,7 +2,7 @@
 빅데이터 자바 개발자 Python 학습 repository
 
 ## 1일차
-- 파이썬 개발환경
+- ### 파이썬 개발환경
 
     - [github](https://giyhub.com/) 가입
 
