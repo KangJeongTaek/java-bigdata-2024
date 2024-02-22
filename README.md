@@ -76,7 +76,7 @@
                 파이썬에서는 %d,%s,%c 등 포맷스티링용 연산자 사용 빈도가 낮다.
 
             - format 함수로 포맷팅(가장 일반적)
-            ```Python
+                ```Python
                 ## 날짜를 포맷으로 만들 때
                 month = 2
                 day = 21
@@ -92,6 +92,7 @@
                 print('파이는{0:.2f}'.format(PI))
                 print('{0:f}'.format(PI)) #실수형은 d(정수형 포맷팅) 불가
                 ```
+
             - f문자열 포매팅
                 ```Python
                 name = '홍길동'
