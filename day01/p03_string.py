@@ -50,6 +50,7 @@ print(cp[12:16 +1]) # : 뒤에 있는 숫자는 항상 +1
 
 print(ascii('안'), ascii('녕'),ascii('하'),ascii('세'),ascii('요'))
 
+print(cp[0:7])
 # 기존 문자열로 새로운 문자열을 만들 때는 슬라이싱, 다른 문자열로 대체
 print(cp[0:7], 'long', cp[17:])
 
