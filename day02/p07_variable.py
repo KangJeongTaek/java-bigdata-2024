@@ -9,7 +9,7 @@ b = a
 print(id(b))
 
 c= 1
-d= c 
+d= c
 print(id(c))
 print(id(d))
 e = [1,2,3]
