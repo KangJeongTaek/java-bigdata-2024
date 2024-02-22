@@ -38,7 +38,7 @@ for i in range(1,6):
     print()
 
 
-b = 10
+
 i = 0
 while True:
     i += 1
@@ -48,14 +48,14 @@ while True:
 for i in range(1,101):
     print(i)
 
-A = {70,60,55,75,95,90,80,80,85,100}
+A = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
 total = 0
 for score in A:
     total += score
-avg = total// len(A)
-
+print(total)
+avg =total/len(A)
 print(avg)
 
 numbers = [1,2,3,4,5]
-result = [b for m in numbers if m % 2 != 0]
+result = [m for m in numbers if m % 2 != 0]
 print(result)

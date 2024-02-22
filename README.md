@@ -328,7 +328,88 @@
                     ...
                 ```
 
+        - #### 02-9 함수
+            - 함수 만들기
+                ```python
+                def plus(a,b):
+                    res = a+b:
+                    return res
+                ```
+            - 함수 pass
+                ```python
+                def funName():
+                    pass
+                ```
+            - 함수 기본 인수 지정
+                ```python
+                def power(a,b=10):
+                    res = a**b
+                    return res
+
+                ##def power(a=2,b): 이건 안됨. 기본 인수는 뒤에서부터 지정
+                ```
+
+            - 매개 변수의 개수를 모를 때(동적 매개변수)
+                ```python
+                def plus_many(*items):
+                    result =0
+                    for item in items:
+                         result += item
+                     return result
+
+                plus_many(1,2,3,4)
+                plus_many(1,2)
+                ```
+            - 계산기
+                ```python
+                def calcurator(mode, *args):
+                     if mode == 'a':
+                         result = 0
+                        for i in args:
+                             result += i
+                     elif mode == 'n':
+                         result = args[0]
+                        for i in args[1:]:
+                             result -= i
+                    elif mode == 'm':
+                        result = 1
+                        for i in args:
+                            result *= i
+                    elif mode == 'd':
+                     result = args[0]
+                     for i in args[1:]:
+                          result /= i
+                    return result
+                ```
+            - 키워드 매개 변수(딕셔너리 생성)
+                ```python
+                def print_kwargs(**items):
+                    print(items)
+                ```
+
+            - return이 여러개인 함수. 튜플로 리턴
+                ```python
+                def calc2(a,b):
+                    result1 = a+b
+                    result2 = a-b
+                    result3 = a*b
+                    result4 = a/b
+
+                    return result1,result2,result3,result4
+                ```
+            - 람다(익명 함수)
+                ```python
+                add = lambda a,b:a+b
+                print(add(5,4))
+                ```
+
 ## 3일차
+- ### 파이썬 학습
+    - #### 파이썬 기초문법
+        - #### 02-10 입출력
+        - #### 02-11 객체지향
+        - #### 02-12 모듈, 패키지
+        - #### 02-13 객체지향
 
 ## 4일차
 
