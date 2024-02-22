@@ -226,11 +226,18 @@
                 print(bool(None)) #False
 
                 #빈값,None,0는 False 이 외의 값들은 True
+                True + False #가능  <- 1나옴
                 ```
 
         - #### 02-6 None형
             - None
-        - #### 02-7 제어문
+                ```python
+                c = None
+                #c + 1  <- 불가능
+                ```
+
+        - #### 02-7 변수
+        - #### 02-8 제어문
 
 ## 3일차
 

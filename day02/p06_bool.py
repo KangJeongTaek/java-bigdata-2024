@@ -1,5 +1,5 @@
 # file : p06_bool.py
-#desc : 붍타입 학습
+#desc : 붍타입, None 타입 학습
 
 # 참 거짓
 
@@ -31,3 +31,10 @@ print(bool({})) #False
 print(bool('')) #False
 print(bool('H')) #True
 print(bool(None)) #False
+
+c = None
+print(c)
+
+print(a+b)
+
+print(True+False)
