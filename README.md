@@ -321,6 +321,12 @@
                 [i for i in range(10)]
                 ```
             - while 문
+                ```python
+                while 조건문:
+                    수행할문장1
+                    수행할문장2
+                    ...
+                ```
 
 ## 3일차
 
