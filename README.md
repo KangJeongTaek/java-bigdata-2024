@@ -156,9 +156,53 @@
         - #### 02-4 딕셔너리. 집합
             - 단어 그대로 '사전'이라는 뜻
             - Key와 Value를 한 쌍으로 가지는 자료형
-            ```python
-            {Key1: Value1,Key2:Value2,Key3:Value3, ...}
-            ```
+                ```python
+                {Key1: Value1,Key2:Value2,Key3:Value3, ...}
+
+                dic = {'name':'pey','phone':010-9999-1234','birth':'1118}
+                ```
+            - 딕셔너리 출력 방법
+                ```python
+                print(dic['name'])
+                ```
+            - 딕셔너리 추가, 삭제
+                ```python
+                dic['home'] = 'Busan' # 값 추가
+                del dic['name'] #값 삭제
+                ```
+            - 주의 사항
+                - 키 값은 고유한 값이므로 중복되는 Key 값을 설정해 놓으면 하나를 제외한 나머지 것들이 모두 무시된다
+                - 키값은 리스트로 쓸 수 없다. 그리고 되도록 문자로 사용하도록 하자
+
+            - 딕셔너리 관련 함수
+                - 딕셔너리에 현재 존재하는 키 목록
+                    ```python
+                    dic.keys()
+                    ```
+                - 딕셔너리의 Key,Value 한 쌍 얻기
+                    ```python
+                    dic.items()
+                    ```
+                -  딕셔너리 값 가져오기
+                    ```python
+                    dic.get('name')
+                    ```
+                - 딕셔너리 안에 키가 있는지 확인
+                    ```python
+                    'name' in dic
+                    ```
+                - 딕셔너리에 현재 존재하는 값 목록
+                    ```python
+                    dic.values()
+                    ```
+                - 딕셔너리에 현재 존재하는 값 삭제
+                    ```python
+                    dic.pop('name') # 삭제한 값 리턴
+
+                    dic.clear() ## 데이터 삭제
+
+                    del dic ## 완전 삭제
+                    ```
         - #### 02-5 불 자료형
         - #### 02-6 None형
         - #### 02-7 제어문
