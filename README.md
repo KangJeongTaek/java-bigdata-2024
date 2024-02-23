@@ -407,7 +407,26 @@
 - ### 파이썬 학습
     - #### 02 파이썬 기초문법
         - ##### 02-10 입출력
-            - 
+            - input
+                - input으로 받는 값은 모두 문자열
+                    ```python
+                    num = input('곱할 수나이를 적으세요') # num = int(input('숫자 입력 > '))
+                    type(print(num))
+                    num = int(num)
+                    print(num * 2)
+                    ```
+                - 여러 값을 입력할 때
+                    ```python
+                    (a1,a2,a3) = input('세 값을 입력(구분자는 space)').split(' ')
+                    #튜플 자료형이므로 바로 int로 변경할 수 없다
+                    a1,a2,a3 = int(a1),int(a2),int(a3)
+                    sum + a1+a2+a3
+
+                    #map을 사용할 수도 있다. map(function, iterable)
+                    (a1,a2,a3) = map(int,input('세 값을 입력(구분자는 space)').split(' '))
+                    ```
+
+            - print
         - ##### 02-11 객체지향
         - ##### 02-12 모듈, 패키지
         - ##### 02-13 객체지향
