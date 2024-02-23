@@ -6,7 +6,7 @@
 
     - [github](https://giyhub.com/) 가입
 
-    - [git](https://get=scm.com/download/win) 설치
+    - [git](https://git-scm.com/download/win) 설치
 
     - [githubdesktop](https://desktop.github.com/) 설치
 
