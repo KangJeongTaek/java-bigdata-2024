@@ -19,7 +19,7 @@
 
 - ### 파이썬 학습
 
-     - #### 01 파이썬 개요
+    - #### 01 파이썬 개요
 
         - ##### 01-1 파이썬이란?
             - 1990년, 네덜란드계 귀도 반 로섬이 발표한 고급 프로그래밍 언어
@@ -255,92 +255,93 @@
                 del d[2]
                 print(a)
                 ```
-        - ##### 02-8 제어문
-            - if 문
-                - 파이썬에서는 들여쓰기 항상 신경쓰기!
+    - #### 03 제어문
+        - #### 03-1 if 문
+            - 파이썬에서는 들여쓰기 항상 신경쓰기!
+            ```python
+            indentation(들여쓰기) == space 4
+            if 조건문 :
+                실행문_문장1
+                실행문_문장2
+                ...
+            elif 조건문 :
+                실행문_문장1
+                실행문_문장2
+                ...
+            else :
+                실행문_문장1
+                실행문_문장2
+                ...
+            ```
+            - and , or, not
                 ```python
-                indentation(들여쓰기) == space 4
-                if 조건문 :
-                   실행문_문장1
-                   실행문_문장2
-                    ...
-                elif 조건문 :
-                    실행문_문장1
-                    실행문_문장2
-                    ...
-                else :
-                   실행문_문장1
-                   실행문_문장2
-                    ...
-                ```
-                - and , or, not
-                    ```python
-                    #x and y | x와 y 둘 다 True여야 True
-                    #x or y | x와 y 둘 중 하나가 True여도 True
-                    #not | True는 False로 False는 True로
+                #x and y | x와 y 둘 다 True여야 True
+                #x or y | x와 y 둘 중 하나가 True여도 True
+                #not | True는 False로 False는 True로
 
-                    ##print() end옵션, sep옵션
-                    print(1 in [1,3,5,7,9], end='') # True13579,test
-                    print('13579','test',sep=',')
-                    ```
-
-                - 조건부 표현식
-                    ```python
-                    #파이썬에선 조건 연산자를 잘 안 쓴다
-                    'hi' if True(조건식) else 'bye'
-                    ```
-
-            - for 문
-                ```python
-                #for item in 반복할 객체(iterable이라고 불린다.):
-                #   ...
-
+                ##print() end옵션, sep옵션
+                print(1 in [1,3,5,7,9], end='') # True13579,test
+                print('13579','test',sep=',')
                 ```
 
+            - 조건부 표현식
                 ```python
-                range(0,10)
-                print(list(range(0,10))) #0부터 9까지
-
-                print(list(range(0,11,2))) #0부터 짝수로
-
-                print(list(range(1,10,2))) #1부터 홀수로
-
-                print(list(range(10,0,-2))) # 10,8,6,4,2
-
-                print(list(range(4,101,4))) # 4부터 4의 배수를 100까지 표현
-
-
-                res = 0
-                for i in range(1,11):
-                    res += 1 ## 55
-
+                #파이썬에선 조건 연산자를 잘 안 쓴다
+                'hi' if True(조건식) else 'bye'
                 ```
 
-                ```python
-                ##list comprehension / 리스트 내포
-                [i for i in range(10)]
-                ```
-            - while 문
-                ```python
-                while 조건문:
-                    수행할문장1
-                    수행할문장2
-                    ...
-                ```
+        - #### 03-2 for 문
+            ```python
+            #for item in 반복할 객체(iterable이라고 불린다.):
+            #   ...
 
-        - ##### 02-9 함수
+            ```
+
+            ```python
+            range(0,10)
+            print(list(range(0,10))) #0부터 9까지
+
+            print(list(range(0,11,2))) #0부터 짝수로
+
+            print(list(range(1,10,2))) #1부터 홀수로
+
+            print(list(range(10,0,-2))) # 10,8,6,4,2
+
+            print(list(range(4,101,4))) # 4부터 4의 배수를 100까지 표현
+
+
+            res = 0
+            for i in range(1,11):
+                res += 1 ## 55
+
+            ```
+
+            ```python
+            ##list comprehension / 리스트 내포
+            [i for i in range(10)]
+            ```
+        - #### 03-3 while 문
+            ```python
+            while 조건문:
+                수행할문장1
+                수행할문장2
+                ...
+            ```
+
+    - #### 04 파이썬의 입출력
+        - ##### 04-1 함수
             - 함수 만들기
                 ```python
                 def plus(a,b):
                     res = a+b:
                     return res
                 ```
-            - 함수 pass
+            - 04-2 함수 pass
                 ```python
                 def funName():
                     pass
                 ```
-            - 함수 기본 인수 지정
+            - 04-3 함수 기본 인수 지정
                 ```python
                 def power(a,b=10):
                     res = a**b
@@ -349,13 +350,13 @@
                 ##def power(a=2,b): 이건 안됨. 기본 인수는 뒤에서부터 지정
                 ```
 
-            - 매개 변수의 개수를 모를 때(동적 매개변수)
+            - 04-4 매개 변수의 개수를 모를 때(동적 매개변수)
                 ```python
                 def plus_many(*items):
                     result =0
                     for item in items:
-                         result += item
-                     return result
+                            result += item
+                        return result
 
                 plus_many(1,2,3,4)
                 plus_many(1,2)
@@ -363,22 +364,22 @@
             - 계산기
                 ```python
                 def calcurator(mode, *args):
-                     if mode == 'a':
-                         result = 0
+                        if mode == 'a':
+                            result = 0
                         for i in args:
-                             result += i
-                     elif mode == 'n':
-                         result = args[0]
+                                result += i
+                        elif mode == 'n':
+                            result = args[0]
                         for i in args[1:]:
-                             result -= i
+                                result -= i
                     elif mode == 'm':
                         result = 1
                         for i in args:
                             result *= i
                     elif mode == 'd':
-                     result = args[0]
-                     for i in args[1:]:
-                          result /= i
+                        result = args[0]
+                        for i in args[1:]:
+                            result /= i
                     return result
                 ```
             - 키워드 매개 변수(딕셔너리 생성)
@@ -405,8 +406,8 @@
 
 ## 3일차
 - ### 파이썬 학습
-    - #### 02 파이썬 기초문법
-        - ##### 02-10 입출력
+    - #### 04 파이썬의 입출력
+        - ##### 04-2 사용자 입출력
             - input
                 - input으로 받는 값은 모두 문자열
                     ```python
@@ -430,78 +431,80 @@
             - print
                 - print()
 
-            - 파일 입출력
-                - 파일 생성하기
-                    ```python
-                    f = open("파일경로/새파일.txt",mode='w',encoding='utf-8')
-                    f.close()
-
-                    #컴퓨터에서 열면 무조건 닫아야하는 것
-                    #1. 파일 open(),close()
-                    #2. 네트워크 open(),close()
-                    #3. DB open or connect(),close()
-                    ```
-                    - 파일 열기 모드
-                        ```python
-                        'r' 읽기 모드
-                        'w' 쓰기 모드 <- 매번 새로운 파일 생성
-                        'a' 추가 모드 <- 기존 파일에 내용 추가
-                        ```
-
-                    - 상대 경로 절대 경로
-                        ```python
-                        # 상대 경로
-                        ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
-
-                        # 절대 경로
-                        G:/Source/java-bigdata-2024/day03/sample.txt
-                        ```
-                - 파일 쓰기
-                    ```python
-                    f = open("./sample.txt",mode='w',encoding='utf-8')
-                    f.write('안녕하세요. 파이썬\n') #줄바꿈 하려면 \n을 작성해줘야 한다
-                    f.write('가즈아')
-                    f.close()
-                    # 쓰기는 출력이다
-                    ```
-
-                - 파일 읽기
-                    ```python
-                    f = open('./sample.txt',mode='r',encoding='utf-8')
-                    read = f.readline() < - 한줄만 읽기
-                    read1 = f.readlines() <- 여러줄 읽기 ,리스트로 반환
-
-                    for line in read1:
-                    print(line.replace('\n',''))
-
-                    while True:
-                        if not read : break
-                        print(read.replace('\n',''))
-
-                    f.close()
-                    ```
-            
-            - 프로그램 입출력
+        - ##### 04-3 파일 입출력
+            - 파일 생성하기
                 ```python
-                import sys
+                f = open("파일경로/새파일.txt",mode='w',encoding='utf-8')
+                f.close()
 
-               
-                args = sys.argv[1:]
-                    
-                
-                for i in args:
-                    if i == '--version':
-                        print('Python 3.12.2')
-                    elif i == 'h':
-                        print('도움말 >>')
-                    else:
-                        print('재입력')
-                        
-                    break
+                #컴퓨터에서 열면 무조건 닫아야하는 것
+                #1. 파일 open(),close()
+                #2. 네트워크 open(),close()
+                #3. DB open or connect(),close()
                 ```
-        - ##### 02-11 객체지향
-        - ##### 02-12 모듈, 패키지
-        - ##### 02-13 객체지향
+                - 파일 열기 모드
+                    ```python
+                    'r' 읽기 모드
+                    'w' 쓰기 모드 <- 매번 새로운 파일 생성
+                    'a' 추가 모드 <- 기존 파일에 내용 추가
+                    ```
+
+                - 상대 경로 절대 경로
+                    ```python
+                    # 상대 경로
+                    ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
+
+                    # 절대 경로
+                    G:/Source/java-bigdata-2024/day03/sample.txt
+                    ```
+            - 파일 쓰기
+                ```python
+                f = open("./sample.txt",mode='w',encoding='utf-8')
+                f.write('안녕하세요. 파이썬\n') #줄바꿈 하려면 \n을 작성해줘야 한다
+                f.write('가즈아')
+                f.close()
+                # 쓰기는 출력이다
+                ```
+
+            - 파일 읽기
+                ```python
+                f = open('./sample.txt',mode='r',encoding='utf-8')
+                read = f.readline() < - 한줄만 읽기
+                read1 = f.readlines() <- 여러줄 읽기 ,리스트로 반환
+                read3 = f.read() <- 전체 텍스트를 문자열로 반환, 단 텍스트가 길면 문장이 잘려나온다
+
+                for line in read1:
+                print(line.replace('\n',''))
+
+                while True:
+                    if not read : break
+                    print(read.replace('\n',''))
+
+                f.close()
+                ```
+        
+        - ##### 04-4 프로그램 입출력
+            ```python
+            import sys
+
+            
+            args = sys.argv[1:]
+                
+            
+            for i in args:
+                if i == '--version':
+                    print('Python 3.12.2')
+                elif i == 'h':
+                    print('도움말 >>')
+                else:
+                    print('재입력')
+                    
+                break
+            ```
+    - #### 05 객체지향
+        - ##### 05-1 클래스
+        - ##### 05-2,3 모듈, 패키지
+        - ##### 05-4 예외 처리
 
 ## 4일차
 

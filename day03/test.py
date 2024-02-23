@@ -1,5 +1,5 @@
 
-f  = open('test.text',mode='w')
+f  = open('test.text',mode='w',encoding='utf-8')
 f.write('Life is too short\nyou need java')
 
 f.close
