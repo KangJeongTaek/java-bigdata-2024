@@ -442,21 +442,22 @@
                 #2. 네트워크 open(),close()
                 #3. DB open or connect(),close()
                 ```
-                - 파일 열기 모드
-                    ```python
-                    'r' 읽기 모드
-                    'w' 쓰기 모드 <- 매번 새로운 파일 생성
-                    'a' 추가 모드 <- 기존 파일에 내용 추가
-                    ```
+            - 파일 열기 모드
+                ```python
+                'r' 읽기 모드
+                'w' 쓰기 모드 <- 매번 새로운 파일 생성
+                'a' 추가 모드 <- 기존 파일에 내용 추가
+                ```
 
-                - 상대 경로 절대 경로
-                    ```python
-                    # 상대 경로
-                    ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
+            - 상대 경로 절대 경로
+                ```python
+                # 상대 경로
+                ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
 
-                    # 절대 경로
-                    G:/Source/java-bigdata-2024/day03/sample.txt
-                    ```
+                # 절대 경로
+                G:/Source/java-bigdata-2024/day03/sample.txt
+                ```
+                
             - 파일 쓰기
                 ```python
                 f = open("./sample.txt",mode='w',encoding='utf-8')
