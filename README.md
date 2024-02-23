@@ -433,75 +433,76 @@
 
         - ##### 04-3 파일 입출력
             - 파일 생성하기
-                ```python
-                f = open("파일경로/새파일.txt",mode='w',encoding='utf-8')
-                f.close()
+            ```python
+            f = open("파일경로/새파일.txt",mode='w',encoding='utf-8')
+            f.close()
 
-                #컴퓨터에서 열면 무조건 닫아야하는 것
-                #1. 파일 open(),close()
-                #2. 네트워크 open(),close()
-                #3. DB open or connect(),close()
-                ```
+            #컴퓨터에서 열면 무조건 닫아야하는 것
+            #1. 파일 open(),close()
+            #2. 네트워크 open(),close()
+            #3. DB open or connect(),close()
+            ```
+            
             - 파일 열기 모드
-                ```python
-                'r' 읽기 모드
-                'w' 쓰기 모드 <- 매번 새로운 파일 생성
-                'a' 추가 모드 <- 기존 파일에 내용 추가
-                ```
+            ```python
+            'r' 읽기 모드
+            'w' 쓰기 모드 <- 매번 새로운 파일 생성
+            'a' 추가 모드 <- 기존 파일에 내용 추가
+            ```
 
             - 상대 경로 절대 경로
-                ```python
-                # 상대 경로
-                ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
+            ```python
+            # 상대 경로
+            ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
 
-                # 절대 경로
-                G:/Source/java-bigdata-2024/day03/sample.txt
-                ```
-                
+            # 절대 경로
+            G:/Source/java-bigdata-2024/day03/sample.txt
+            ```
+
             - 파일 쓰기
-                ```python
-                f = open("./sample.txt",mode='w',encoding='utf-8')
-                f.write('안녕하세요. 파이썬\n') #줄바꿈 하려면 \n을 작성해줘야 한다
-                f.write('가즈아')
-                f.close()
-                # 쓰기는 출력이다
-                ```
+            ```python
+            f = open("./sample.txt",mode='w',encoding='utf-8')
+            f.write('안녕하세요. 파이썬\n') #줄바꿈 하려면 \n을 작성해줘야 한다
+            f.write('가즈아')
+            f.close()
+            # 쓰기는 출력이다
+            ```
 
             - 파일 읽기
-                ```python
-                f = open('./sample.txt',mode='r',encoding='utf-8')
-                read = f.readline() < - 한줄만 읽기
-                read1 = f.readlines() <- 여러줄 읽기 ,리스트로 반환
-                read3 = f.read() <- 전체 텍스트를 문자열로 반환, 단 텍스트가 길면 문장이 잘려나온다
+            ```python
+            f = open('./sample.txt',mode='r',encoding='utf-8')
+            read = f.readline() < - 한줄만 읽기
+            read1 = f.readlines() <- 여러줄 읽기 ,리스트로 반환
+            read3 = f.read() <- 전체 텍스트를 문자열로 반환, 단 텍스트가 길면 문장이 잘려나온다
 
-                for line in read1:
-                print(line.replace('\n',''))
+            for line in read1:
+            print(line.replace('\n',''))
 
-                while True:
-                    if not read : break
-                    print(read.replace('\n',''))
+            while True:
+                if not read : break
+                print(read.replace('\n',''))
 
-                f.close()
-                ```
+            f.close()
+            ```
         
         - ##### 04-4 프로그램 입출력
-            ```python
-            import sys
+        ```python
+        import sys
 
+        
+        args = sys.argv[1:]
             
-            args = sys.argv[1:]
+        
+        for i in args:
+            if i == '--version':
+                print('Python 3.12.2')
+            elif i == 'h':
+                print('도움말 >>')
+            else:
+                print('재입력')
                 
-            
-            for i in args:
-                if i == '--version':
-                    print('Python 3.12.2')
-                elif i == 'h':
-                    print('도움말 >>')
-                else:
-                    print('재입력')
-                    
-                break
-            ```
+            break
+        ```
     - #### 05 객체지향
         - ##### 05-1 클래스
 
