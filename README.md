@@ -336,12 +336,12 @@
                     res = a+b:
                     return res
                 ```
-            - 04-2 함수 pass
+            - 함수 pass
                 ```python
                 def funName():
                     pass
                 ```
-            - 04-3 함수 기본 인수 지정
+            - 함수 기본 인수 지정
                 ```python
                 def power(a,b=10):
                     res = a**b
@@ -350,7 +350,7 @@
                 ##def power(a=2,b): 이건 안됨. 기본 인수는 뒤에서부터 지정
                 ```
 
-            - 04-4 매개 변수의 개수를 모를 때(동적 매개변수)
+            - 매개 변수의 개수를 모를 때(동적 매개변수)
                 ```python
                 def plus_many(*items):
                     result =0
