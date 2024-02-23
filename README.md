@@ -428,6 +428,7 @@
                     ```
 
             - print
+                - print()
 
             - 파일 입출력
                 - 파일 생성하기
@@ -457,10 +458,47 @@
                         ```
                 - 파일 쓰기
                     ```python
-                    f = open("./simple.txt",mode='w',encoding='utf-8')
+                    f = open("./sample.txt",mode='w',encoding='utf-8')
                     f.write('안녕하세요. 파이썬\n') #줄바꿈 하려면 \n을 작성해줘야 한다
                     f.write('가즈아')
+                    f.close()
+                    # 쓰기는 출력이다
                     ```
+
+                - 파일 읽기
+                    ```python
+                    f = open('./sample.txt',mode='r',encoding='utf-8')
+                    read = f.readline() < - 한줄만 읽기
+                    read1 = f.readlines() <- 여러줄 읽기 ,리스트로 반환
+
+                    for line in read1:
+                    print(line.replace('\n',''))
+
+                    while True:
+                        if not read : break
+                        print(read.replace('\n',''))
+
+                    f.close()
+                    ```
+            
+            - 프로그램 입출력
+                ```python
+                import sys
+
+               
+                args = sys.argv[1:]
+                    
+                
+                for i in args:
+                    if i == '--version':
+                        print('Python 3.12.2')
+                    elif i == 'h':
+                        print('도움말 >>')
+                    else:
+                        print('재입력')
+                        
+                    break
+                ```
         - ##### 02-11 객체지향
         - ##### 02-12 모듈, 패키지
         - ##### 02-13 객체지향
