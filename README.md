@@ -410,7 +410,7 @@
             - input
                 - input으로 받는 값은 모두 문자열
                     ```python
-                    num = input('곱할 수나이를 적으세요') # num = int(input('숫자 입력 > '))
+                    num = input('곱할 수나이를 적으세요 > ') # num = int(input('숫자 입력 > '))
                     type(print(num))
                     num = int(num)
                     print(num * 2)
@@ -419,6 +419,7 @@
                     ```python
                     (a1,a2,a3) = input('세 값을 입력(구분자는 space)').split(' ')
                     #튜플 자료형이므로 바로 int로 변경할 수 없다
+                    # a1,a2,a3 = int(input('세 값을 입력(구분자는 space)').split(' '))
                     a1,a2,a3 = int(a1),int(a2),int(a3)
                     sum + a1+a2+a3
 
@@ -427,6 +428,33 @@
                     ```
 
             - print
+
+            - 파일 입출력
+                - 파일 생성하기
+                    ```python
+                    f = open("새파일.txt",mode='w',encoding='utf-8')
+                    f.close()
+
+                    #컴퓨터에서 열면 무조건 닫아야하는 것
+                    #1. 파일 open(),close()
+                    #2. 네트워크 open(),close()
+                    #3. DB open or connect(),close()
+                    ```
+                    - 파일 열기 모드
+                        ```python
+                        'r' 읽기모드
+                        'w' 쓰기 모드
+                        'a' 추가 모드
+                        ```
+
+                    - 상대 경로 절대 경로
+                - 파일 쓰기
+                    ```python
+                    f = open("/.simple.txt",mode='w',encoding='utf-8')
+                    f.close()
+                    f.write('안녕하세요. 파이썬')
+                    f.write('가즈아')
+                    ```
         - ##### 02-11 객체지향
         - ##### 02-12 모듈, 패키지
         - ##### 02-13 객체지향
