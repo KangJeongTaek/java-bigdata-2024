@@ -331,78 +331,78 @@
     - #### 04 파이썬의 입출력
         - ##### 04-1 함수
             - 함수 만들기
-                ```python
-                def plus(a,b):
-                    res = a+b:
-                    return res
-                ```
+            ```python
+            def plus(a,b):
+                res = a+b:
+                return res
+            ```
             - 함수 pass
-                ```python
-                def funName():
-                    pass
-                ```
+            ```python
+            def funName():
+                pass
+            ```
             - 함수 기본 인수 지정
-                ```python
-                def power(a,b=10):
-                    res = a**b
-                    return res
+            ```python
+            def power(a,b=10):
+                res = a**b
+                return res
 
-                ##def power(a=2,b): 이건 안됨. 기본 인수는 뒤에서부터 지정
-                ```
+            ##def power(a=2,b): 이건 안됨. 기본 인수는 뒤에서부터 지정
+            ```
 
             - 매개 변수의 개수를 모를 때(동적 매개변수)
-                ```python
-                def plus_many(*items):
-                    result =0
-                    for item in items:
-                            result += item
-                        return result
-
-                plus_many(1,2,3,4)
-                plus_many(1,2)
-                ```
-            - 계산기
-                ```python
-                def calcurator(mode, *args):
-                        if mode == 'a':
-                            result = 0
-                        for i in args:
-                                result += i
-                        elif mode == 'n':
-                            result = args[0]
-                        for i in args[1:]:
-                                result -= i
-                    elif mode == 'm':
-                        result = 1
-                        for i in args:
-                            result *= i
-                    elif mode == 'd':
-                        result = args[0]
-                        for i in args[1:]:
-                            result /= i
+            ```python
+            def plus_many(*items):
+                result =0
+                for item in items:
+                        result += item
                     return result
-                ```
+
+            plus_many(1,2,3,4)
+            plus_many(1,2)
+            ```
+            - 계산기
+            ```python
+            def calcurator(mode, *args):
+                    if mode == 'a':
+                        result = 0
+                    for i in args:
+                            result += i
+                    elif mode == 'n':
+                        result = args[0]
+                    for i in args[1:]:
+                            result -= i
+                elif mode == 'm':
+                    result = 1
+                    for i in args:
+                        result *= i
+                elif mode == 'd':
+                    result = args[0]
+                    for i in args[1:]:
+                        result /= i
+                return result
+            ```
             - 키워드 매개 변수(딕셔너리 생성)
-                ```python
-                def print_kwargs(**items):
-                    print(items)
-                ```
+            ```python
+            def print_kwargs(**items):
+                print(items)
+            ```
 
             - return이 여러개인 함수. 튜플로 리턴
-                ```python
-                def calc2(a,b):
-                    result1 = a+b
-                    result2 = a-b
-                    result3 = a*b
-                    result4 = a/b
+            ```python
+            def calc2(a,b):
+                result1 = a+b
+                result2 = a-b
+                result3 = a*b
+                result4 = a/b
 
-                    return result1,result2,result3,result4
-                ```
+                return result1,result2,result3,result4
+            ```
             - 람다(익명 함수)
-                ```python
-                add = lambda a,b:a+b
-                print(add(5,4))
-                ```
+            ```python
+            add = lambda a,b:a+b
+            print(add(5,4))
+            ```
 
 ## 3일차
 - ### 파이썬 학습
@@ -410,23 +410,24 @@
         - ##### 04-2 사용자 입출력
             - input
                 - input으로 받는 값은 모두 문자열
-                    ```python
-                    num = input('곱할 수나이를 적으세요 > ') # num = int(input('숫자 입력 > '))
-                    type(print(num))
-                    num = int(num)
-                    print(num * 2)
-                    ```
-                - 여러 값을 입력할 때
-                    ```python
-                    (a1,a2,a3) = input('세 값을 입력(구분자는 space)').split(' ')
-                    #튜플 자료형이므로 바로 int로 변경할 수 없다
-                    # a1,a2,a3 = int(input('세 값을 입력(구분자는 space)').split(' '))
-                    a1,a2,a3 = int(a1),int(a2),int(a3)
-                    sum + a1+a2+a3
+                ```python
+                num = input('곱할 수나이를 적으세요 > ') # num = int(input('숫자 입력 > '))
+                type(print(num))
+                num = int(num)
+                print(num * 2)
+                ```
 
-                    #map을 사용할 수도 있다. map(function, iterable)
-                    (a1,a2,a3) = map(int,input('세 값을 입력(구분자는 space)').split(' '))
-                    ```
+                - 여러 값을 입력할 때
+                ```python
+                (a1,a2,a3) = input('세 값을 입력(구분자는 space)').split(' ')
+                #튜플 자료형이므로 바로 int로 변경할 수 없다
+                # a1,a2,a3 = int(input('세 값을 입력(구분자는 space)').split(' '))
+                a1,a2,a3 = int(a1),int(a2),int(a3)
+                sum + a1+a2+a3
+
+                #map을 사용할 수도 있다. map(function, iterable)
+                (a1,a2,a3) = map(int,input('세 값을 입력(구분자는 space)').split(' '))
+                ```
 
             - print
                 - print()
