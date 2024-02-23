@@ -8,8 +8,9 @@
 #3. DB open or connect(),close()
 
 #언어체계 추가 ASCII(한글 cp949), 유니코드(utf-8)
-f = open("./sample.txt",mode ='w',encoding='utf-8')
-f.write('안녕하세요. 파이썬')
-f.write('가즈아')
+#f = open("./day03/sample.txt",mode ='w',encoding='utf-8')
+f = open('G:/Source/java-bigdata-2024/day03/sample.txt',mode='a',encoding='utf-8')
+f.write('안녕하세요. 파이썬\n')
+f.write('가즈아\n')
 #파일 쓰기 진행
 f.close() #파이썬에서는 옵션이지만 다른 언어에서는 반드시 close() 해줘야한다

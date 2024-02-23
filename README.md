@@ -432,7 +432,7 @@
             - 파일 입출력
                 - 파일 생성하기
                     ```python
-                    f = open("새파일.txt",mode='w',encoding='utf-8')
+                    f = open("파일경로/새파일.txt",mode='w',encoding='utf-8')
                     f.close()
 
                     #컴퓨터에서 열면 무조건 닫아야하는 것
@@ -442,17 +442,23 @@
                     ```
                     - 파일 열기 모드
                         ```python
-                        'r' 읽기모드
-                        'w' 쓰기 모드
-                        'a' 추가 모드
+                        'r' 읽기 모드
+                        'w' 쓰기 모드 <- 매번 새로운 파일 생성
+                        'a' 추가 모드 <- 기존 파일에 내용 추가
                         ```
 
                     - 상대 경로 절대 경로
+                        ```python
+                        # 상대 경로
+                        ./day03/sample.txt # .의 의미는 자기 자신 ..은 부모
+
+                        # 절대 경로
+                        G:/Source/java-bigdata-2024/day03/sample.txt
+                        ```
                 - 파일 쓰기
                     ```python
-                    f = open("/.simple.txt",mode='w',encoding='utf-8')
-                    f.close()
-                    f.write('안녕하세요. 파이썬')
+                    f = open("./simple.txt",mode='w',encoding='utf-8')
+                    f.write('안녕하세요. 파이썬\n') #줄바꿈 하려면 \n을 작성해줘야 한다
                     f.write('가즈아')
                     ```
         - ##### 02-11 객체지향
