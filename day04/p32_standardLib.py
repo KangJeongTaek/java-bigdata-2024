@@ -52,3 +52,31 @@ for i in range(5):
     total.append(result)
     result =[]
 print(total)
+
+## 내부라이브러리 중 웹사이트 데이터 가져오기
+#요청(request) > 응답(respone)
+from urllib.request import Request, urlopen
+
+# req = Request('https://www.naver.com')
+# res = urlopen(req)
+
+# print(res.status) # 응답코드 200 OK
+# print(res.read()) # 내용가져오기
+
+## urllib3 외부 웹페이지 분석 모듈
+
+import requests
+
+# res = requests.get('https://www.naver.com')
+
+# print(res.status_code)
+# print(res.content)
+
+from bs4 import BeautifulSoup
+
+f = open('./test.html',mode ='w',encoding = 'utf-8')
+res = requests.get('https://www.google.com')
+if res.status_code == 200:
+    html = res.text
+    soup = BeautifulSoup(html, 'html.parser')
+    f.write(html)

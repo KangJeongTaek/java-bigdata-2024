@@ -633,7 +633,16 @@
             import random
             # random.random() 0에서 1 사이의 실수 중에서 난수 값 리턴
             # random.randint(숫자,숫자) 숫자와 숫자 사이의 정수 중에서 난수 값 리턴
+
+            import urllib
+            # 웹사이트 데이터 가져오기
             ```
+
+        - ##### 05-7 외부 라이브러리
+            - pip(피아이피)
+            - pip install 이름
+            - ex faker, requests, beautifulsoup4
+            
 
 ## 5일차
 
