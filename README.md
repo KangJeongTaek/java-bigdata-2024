@@ -593,23 +593,47 @@
                 - F10 한줄 씩 실행
         
         - ##### 05-5 내장 함수
-        ```python
-        이미 있는 것을 다시 만드느라 시간을 낭비하지 말라.
-        ```
+            - 
+            ```python
+            이미 있는 것을 다시 만드느라 시간을 낭비하지 말라.
+            ```
+            - 자주 쓰는 내장 함수
+            ```python
+            # abs() <- ()안의 수의 절대값(absolute)
+            # all(iterable) <- 요소 중 하나라도 거짓이 있으면 False를 리턴 / 모두 참이면 True 리턴
+            # chr() 아스키나 유니코드 값을 받아서 글자로 변경
+            # ascii() 영문자, 문자를 아스키숫자와 유니코드숫자로 변경
+            # dir() 객체가 지닌 변수, 함수를 알려주는 함수
+            # divmod() 나누기의 몫, 나머지를 한 번에 구해주는 함수
+            # ★ enumerate(iterable) 인덱스 값을 포함하는 enumerate 객체를 리턴. 보통 for 문과 함께 사용한다.
+            # eval(expression) 문자열로 구성된 표현식을 입력으로 받아 해당 문자열을 실행한 결과값을 리턴
+            # hex() 10진수를 16진수로 문자열 변환하여 리턴
+            # ★ map(f, iterable) 입력받은 데이터의 각 요소에 함수 f를 적용한 결과를 리턴
+            # max(iterable) iterable의 요소 중 최댓값 리턴
+            # oct() 정수를 8진수 문자열로 바꾸어 리턴
+            # ord() ascii와 동일
+            # round(숫자,[ndigits]) 반올림
+            # sum(iterator) iterable의 요소를 더한 값을 리턴
+            # tuple(iterable) 반복 가능한 데이터를 튜플로 바꾸어 리턴
+            # ★ type(object) 입력값의 자료형을 리턴
+            # zip(itreable) 동일한 개수로 이루어진 데이터를 묶어서 리턴
+            ```
 
-        ```python
-        # abs() <- ()안의 수의 절대값(absolute)
-        # all(iterable) <- 요소 중 하나라도 거짓이 있으면 False를 리턴 / 모두 참이면 True 리턴
-        # chr() 아스키나 유니코드 값을 받아서 글자로 변경
-        # ascii() 영문자, 문자를 아스키숫자와 유니코드숫자로 변경
-        # dir() 객체가 지닌 변수, 함수를 알려주는 함수
-        # divmod() 나누기의 몫, 나머지를 한 번에 구해주는 함수
-        # ★ enumerate(iterable) 인덱스 값을 포함하는 enumerate 객체를 리턴. 보통 for 문과 함께 사용한다.
-        # eval(expression) 문자열로 구성된 표현식을 입력으로 받아 해당 문자열을 실행한 결과값을 리턴
-        # hex() 10진수를 16진수로 변환하여 리턴
-        # map(f, iterable) 입력받은 데이터의 각 요소에 함수 f를 적용한 결과를 리턴
-        ```
-                
+        - ##### 05-6 표준 라이브러리
+            - 자주 쓰는 표준 라이브러리
+            ```python
+            import datetime
+            # datetime.date(년,월,일) 연, 월, 일로 날짜를 표현
+            # datetime.datetime.now() < - 정말 자주 사용
+
+            import time
+            # time.localtime()
+            # time.sleep(숫자) 숫자만큼 간격을 두고 루프 실행
+
+            import random
+            # random.random() 0에서 1 사이의 실수 중에서 난수 값 리턴
+            # random.randint(숫자,숫자) 숫자와 숫자 사이의 정수 중에서 난수 값 리턴
+            ```
 
 ## 5일차
 
