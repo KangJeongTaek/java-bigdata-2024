@@ -657,8 +657,10 @@
              b = a.encode('utf-8')
              type(b) # <class bytes>
              ```
-             
+
         - ##### 주소록 앱 만들기
+
+            ![주소록앱](https://raw.githubusercontent.com/KangJeongTaek/java-bigdata-2024-Python/main/images/bigdata01.gif)
 
 ## 6일차
 
