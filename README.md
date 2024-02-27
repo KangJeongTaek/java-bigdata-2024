@@ -641,10 +641,21 @@
         - ##### 05-7 외부 라이브러리
             - pip(피아이피)
             - pip install 이름
-            - ex faker, requests, beautifulsoup4
+            - ex) faker, requests, beautifulsoup4
             
 
 ## 5일차
+- ### 파이썬 학습
+    - #### 파이썬 응용
+        - ##### 아스키 및 유니코드
+             - import os #OS에서 필요한 모듈
+             - 인코딩하기
+             ```python
+             a = 'Life is too short'
+             b = a.encode('utf-8')
+             type(b) # <class bytes>
+             ```
+        - ##### 주소록 앱 만들기
 
 ## 6일차
 
