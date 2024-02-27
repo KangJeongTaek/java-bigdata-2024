@@ -18,7 +18,7 @@ class Contact:
     
 
 def setContact(): # 사용자 입력으로 주소록 받기 함수
-    name,phoneNumber,eMail,addr = input('정보 입력(이름, 휴대폰, 이메일, 주소[구분자/]) : ').split('/')
+    name,phoneNumber,eMail,addr = input('정보 입력(이름,휴대폰,이메일,주소[/])> ').split('/')
     name = name.strip() # 사용자 실수로 들어가는 공백 제거
     phoneNumber = phoneNumber.strip()
     eMail = eMail.strip()
@@ -64,8 +64,7 @@ def run():
         elif selMenu == 2:
             clearConsole()
             getContacts(listContact)
-            input()
-            clearConsole()
+            input(); clearConsole()
         elif selMenu == 4: # 종료
             break
         else:
