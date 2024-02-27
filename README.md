@@ -688,6 +688,9 @@
             ![주소록앱](https://raw.githubusercontent.com/KangJeongTaek/java-bigdata-2024-Python/main/images/bigdata01.gif)
 
         - ##### 윈도우 앱 만들기(Tkinter, PyQt)
+            - PyQt5 -> Qt를 파이썬에서 쓸 수 있도록 만든 라이브러리
+            - Qt -> C,C++에서 사용할 수 있는 GUI(WinApp) 프레임워크(멀티플랫폼)
+                - 설치 pip install PyQt5
 
 ## 6일차
 
