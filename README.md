@@ -685,7 +685,7 @@
                         return False
             ```
 
-            ![주소록앱](https://raw.githubusercontent.com/KangJeongTaek/java-bigdata-2024-Python/main/images/bigdata01.gif)
+            ![주소록앱](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01Resize.gif?raw=true)
 
         - ##### 윈도우 앱 만들기(Tkinter, PyQt)
             - PyQt5 -> Qt를 파이썬에서 쓸 수 있도록 만든 라이브러리
