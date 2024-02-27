@@ -9,5 +9,16 @@ Qt -> C,C++에서 사용할 수 있는 GUI(WinApp) 프레임워크(멀티플랫�
 '''
 
 import sys
+from PyQt5.QtCore import Qt
 # QApplication 만들 앱의 전체를 관리하는 클래스, QWidget 메뉴가 없는 윈도우앱, QMainWindow 메뉴가 존재하는 윈도우앱
 from PyQt5.QtWidgets import QApplication,QWidget,QMainWindow
+
+class qtApp(QWidget): #QWidget이 가지고 있는 속성, 변수, 함수를 다 사용가능
+    def __init__(self) -> None:
+        super().__init__() # 생성자, 부모 클래스의 생성자 함수도 실행되어야 한다
+
+
+app = QApplication(sys.argv) #
+inst = qtApp() #객체 생성
+
+app.exec() # 실행
