@@ -647,14 +647,17 @@
 ## 5일차
 - ### 파이썬 학습
     - #### 파이썬 응용
+        - ##### OS 내 디렉토리 검색
+            - import os #OS에서 필요한 모듈
+
         - ##### 아스키 및 유니코드
-             - import os #OS에서 필요한 모듈
              - 인코딩하기
              ```python
              a = 'Life is too short'
              b = a.encode('utf-8')
              type(b) # <class bytes>
              ```
+             
         - ##### 주소록 앱 만들기
 
 ## 6일차
