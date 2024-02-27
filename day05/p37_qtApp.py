@@ -16,6 +16,9 @@ from PyQt5.QtWidgets import QApplication,QWidget,QMainWindow
 class qtApp(QWidget): #QWidget이 가지고 있는 속성, 변수, 함수를 다 사용가능
     def __init__(self) -> None:
         super().__init__() # 생성자, 부모 클래스의 생성자 함수도 실행되어야 한다
+        self.setGeometry(700,300,800,400) # 바탕화면 정해진 위치에 넓이와 높이를 설정
+        self.setWindowTitle('첫번째 윈도우앱') # 타이틀
+        self.show() # 윈도우 창 그리기
 
 
 app = QApplication(sys.argv) #
