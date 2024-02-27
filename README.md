@@ -685,7 +685,7 @@
                         return False
             ```
 
-            <img src="https://raw.githubusercontent.com/KangJeongTaek/java-bigdata-2024-Python/main/images/bigdata01.gif"width="650" height="400" />
+            ![주소록앱](https://raw.githubusercontent.com/KangJeongTaek/java-bigdata-2024-Python/main/images/bigdata01.gif)
 
         - ##### 윈도우 앱 만들기(Tkinter, PyQt)
 
