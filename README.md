@@ -660,6 +660,31 @@
 
         - ##### 주소록 앱 만들기
 
+            ```python
+            class Contact:
+                def __init__(self,name,phoneNumber,eMail,addr): #생성자
+                    self.__name = name
+                    self.__phoneNumber = phoneNumber
+                    self.__eMail = eMail
+                    self.__addr = addr
+
+                def __str__(self) -> str: #사용자가 원하는 형태로 출력
+                    strRes = (f'이  름 : {self.__name}\n'
+                            f'휴대폰 : {self.__phoneNumber}\n'
+                            f'이메일 : {self.__eMail}\n'
+                            f'주  소 : {self.__addr}')
+                    return strRes
+                
+                def getInfo(self):
+                    return self.__name,self.__phoneNumber,self.__eMail,self.__addr
+                
+                def isNameExist(self,name): # 연락처 여부 확인
+                    if self.__name == name:
+                        return True
+                    else:
+                        return False
+            ```
+
             ![주소록앱](https://raw.githubusercontent.com/KangJeongTaek/java-bigdata-2024-Python/main/images/bigdata01.gif)
 
 ## 6일차

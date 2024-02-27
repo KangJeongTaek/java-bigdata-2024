@@ -9,7 +9,7 @@ class Contact:
         self.__eMail = eMail
         self.__addr = addr
 
-    def __str__(self) -> str: #사용가아 원하는 형태로 출력
+    def __str__(self) -> str: #사용자가 원하는 형태로 출력
         strRes = (f'이  름 : {self.__name}\n'
                 f'휴대폰 : {self.__phoneNumber}\n'
                 f'이메일 : {self.__eMail}\n'
