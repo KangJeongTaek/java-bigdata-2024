@@ -708,7 +708,8 @@
 
             - PyQt5 학습 이어서
                 - QWidget 자식 클래스 종류 학습
-                [QtDesigner](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata03.gif)
+
+                ![QtDesigner](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata03.gif)
                 
 
 ## 7일차
