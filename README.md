@@ -710,6 +710,10 @@
                 - QWidget 자식 클래스 종류 학습
 
                 ![QtDesigner](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata03.gif)
+
+                [공공데이터포털](https://www.data.go.kr/)
+                
+                [네이버 디벨로퍼](https://developers.naver.com/main/)
                 
 
 ## 7일차
