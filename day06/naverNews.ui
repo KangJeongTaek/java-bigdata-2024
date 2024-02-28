@@ -89,18 +89,19 @@
         </item>
        </layout>
       </widget>
-     </widget>
-    </item>
-    <item>
-     <widget class="QListView" name="lsvSearchResult">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
+      <widget class="QTableWidget" name="tblSearchResult">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>62</y>
+         <width>779</width>
+         <height>401</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
     </item>
    </layout>
-   <zorder>lsvSearchResult</zorder>
-   <zorder>groupBox</zorder>
   </widget>
  </widget>
  <resources/>

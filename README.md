@@ -709,11 +709,14 @@
             - PyQt5 학습 이어서
                 - QWidget 자식 클래스 종류 학습
 
-                ![QtDesigner](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata03.gif)
+                ![Qlabel](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata03.gif)
 
                 [공공데이터포털](https://www.data.go.kr/)
                 
                 [네이버 디벨로퍼](https://developers.naver.com/main/)
+
+                - 네이버 API로 뉴스 검색앱
+                ![네이버 API로 뉴스 검색 앱](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata02.png)
                 
 
 ## 7일차
