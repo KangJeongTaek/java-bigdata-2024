@@ -716,7 +716,7 @@
                 [네이버 디벨로퍼](https://developers.naver.com/main/)
 
                 - 네이버 API로 뉴스 검색앱
-                ![네이버 API로 뉴스 검색 앱](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata02.png)
+                ![네이버 API로 뉴스 검색 앱](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata04.png)
                 
 
 ## 7일차
