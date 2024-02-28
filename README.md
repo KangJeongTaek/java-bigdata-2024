@@ -593,7 +593,7 @@
                 - F10 한줄 씩 실행
         
         - ##### 05-5 내장 함수
-            - 
+            -
             ```python
             이미 있는 것을 다시 만드느라 시간을 낭비하지 말라.
             ```
@@ -616,7 +616,7 @@
             # sum(iterator) iterable의 요소를 더한 값을 리턴
             # tuple(iterable) 반복 가능한 데이터를 튜플로 바꾸어 리턴
             # ★ type(object) 입력값의 자료형을 리턴
-            # zip(itreable) 동일한 개수로 이루어진 데이터를 묶어서 리턴
+            # zip(iterable) 동일한 개수로 이루어진 데이터를 묶어서 리턴
             ```
 
         - ##### 05-6 표준 라이브러리
@@ -695,6 +695,16 @@
                 ![QtApp](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata02.png)
 
 ## 6일차
+- ### 파이썬 학습
+    - #### 파이썬 응용
+        - ##### 윈도우 앱 만들기(PyQt)
+            - PyQt를 기본적 방법부터 차근차근
+            
+            ![PyQt](https://wikidocs.net/book/2165)
+
+            ![QtDesigner](https://wikidocs.net/book/2944)
+
+            ![PyQt](https://youneedawiki.com/app/page/1jZnNNl4biKk3kjpcR4BfKhTO54BJf8QM) 참조
 
 ## 7일차
 
