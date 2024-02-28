@@ -21,11 +21,11 @@ class qtApp(QWidget):
         uic.loadUi('./day06/naverNews.ui',self)
         self.btnSearch.clicked.connect(self.btnSearchClicked) #버튼 서치 클릭시 처리
         self.txtSearchWord.returnPressed.connect(self.btnSearchClicked) #검색버튼 시그널 함수 연결
-        self.tblSearchResult.itemDoubleClicked.connect(self.tblResultDoubleClicked) # 테이블 더블 클릭시 처리
-        
+        self.tblSearchResult.cellDoubleClicked.connect(self.tblResultDoubleClicked) # 셀 더블 클릭시 처리
+
         self.show()
 
-    def tblResultDoubleClicked(self): #테이블 클릭시 처리
+    def tblResultDoubleClicked(self): #셀 클릭시 처리
         selectRow = self.tblSearchResult.currentRow() #현재 선택된 행의 인덱스
         url = self.tblSearchResult.item(selectRow,1).text()
         webbrowser.open(url) # 웹브라우저에서 열기
