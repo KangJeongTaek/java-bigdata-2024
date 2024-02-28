@@ -699,12 +699,15 @@
     - #### 파이썬 응용
         - ##### 윈도우 앱 만들기(PyQt)
             - PyQt를 기본적 방법부터 차근차근
-            
-            ![PyQt](https://wikidocs.net/book/2165)
 
-            ![QtDesigner](https://wikidocs.net/book/2944)
+                [PyQt 위키독스](https://wikidocs.net/book/2165) 학습
 
-            ![PyQt](https://youneedawiki.com/app/page/1jZnNNl4biKk3kjpcR4BfKhTO54BJf8QM) 참조
+                [QtDesigner 위키독스](https://wikidocs.net/book/2944) 학습
+
+                [PyQt](https://youneedawiki.com/app/page/1jZnNNl4biKk3kjpcR4BfKhTO54BJf8QM) 참조
+
+            - PyQt5 학습 이어서
+                - QWidget 자식 클래스 종류 학습
 
 ## 7일차
 
