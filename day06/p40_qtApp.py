@@ -10,6 +10,7 @@
 '''
 
 import sys
+from PyQt5 import QtGui,QtCore,QtWidgets,uic
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -20,13 +21,12 @@ class qtApp(QWidget):
         self.initUI()
 
 
-    def initUI(self):
-        
-        self.setGeometry((1920-300)//2,(1800-300)//2,320,230) # 바탕화면 정해진 위치에 넓이와 높이를 설정
-        self.setWindowTitle('네번째 qt앱') # 타이틀
+    def initUI(self): # UI 파일을 로드해서 화면 디자인
         self.setWindowIcon(QIcon('./images/windows.png'))
-
+        uic.loadUi('./day06/firstApp.ui',self)
         
+        #버튼 시그널 처리
+        self.btnMsg.clicked.connect(self.btnMsgClicked) #ui파일 내 위젯은 자동완성이 안된다.
         self.show() # 윈도우 창 그리기
 
     def closeEvent(self, QCloseEvent): # 오버라이드(재정의)
@@ -36,6 +36,12 @@ class qtApp(QWidget):
         else:
             QCloseEvent.ignore()
             QMessageBox.about(self,'취소','종료하지 않습니다.')
+
+    def btnMsgClicked(self):
+        self.label.setText('Hello!!')
+        QMessageBox.about(self,'Qt디자이너','클릭했습니다.!!!')
+        if QMessageBox.Ok:
+            self.label.setText('Hi')
 
 app = QApplication(sys.argv) #
 inst = qtApp() #객체 생성
