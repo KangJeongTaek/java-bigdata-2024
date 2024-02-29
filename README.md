@@ -733,6 +733,7 @@
         - ##### PyQt5
             - 스레드 학습
             - QR코드 생성기
+                ![Qr코드](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/KangJeongTaekPython2024QrCode.png)
 
 ## 8일차
 
