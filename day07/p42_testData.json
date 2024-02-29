@@ -2,5 +2,6 @@
     "name" : "강정택",
     "age" : 29,
     "gender" : "M",
-    "addr" : "부산"
+    "addr" : "부산",
+    "languages" : ["日本語","한국어","English"]
 }

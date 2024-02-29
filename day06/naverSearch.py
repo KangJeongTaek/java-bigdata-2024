@@ -34,6 +34,7 @@ class NaverSearch:
         params = f'?query={quote(searchWord)}&start=1&display=20'
         FinalUrl = baseUrl + params
         result = self.getRequestUrl(FinalUrl)
+        print(type(result))
         if result != None: #예외가 발생하지 않았으면
             return json.loads(result)
         else:
