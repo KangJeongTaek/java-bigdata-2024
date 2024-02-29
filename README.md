@@ -732,7 +732,9 @@
             - json 데이터 접근은 파이썬 딕셔너리, 리스트와 동일하게 사용가능
         - ##### PyQt5
             - 스레드 학습
+            
             - QR코드 생성기
+
                 ![Qr코드](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/KangJeongTaekPython2024QrCode.png)
 
 ## 8일차
