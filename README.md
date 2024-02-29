@@ -735,7 +735,7 @@
 
                 ![스레드](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdataThread.gif)
 
-                ![스레드비교](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata05.gif)
+                ![스레드비교](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata05.png)
 
             - QR코드 생성기
 
