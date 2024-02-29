@@ -52,9 +52,12 @@ class qtApp(QWidget):
         self.tblSearchResult.setHorizontalHeaderLabels(['기사제목','뉴스링크','게시일자'])
         n = 0
         for post in result:
-            self.tblSearchResult.setItem(n,0,QTableWidgetItem(post['title'].replace('&quot;','"')))
+            #html 태그, 특수문자 삭제를 해야 한다.(<b>손흥민</b>,&lt;[<],&gt;[>],&quot;["],&nbsp;[ ])
+            title = str(post['title']).replace('<b>','').replace('</b>','').replace('&quot;','"').replace('&quot','"').replace('&nbsp','')
+            self.tblSearchResult.setItem(n,0,QTableWidgetItem(title))
             self.tblSearchResult.setItem(n,1,QTableWidgetItem(post['link']))
-            tempDates = str(post['pubDate']).split(' ') #tempDates라는 변수에 ['Thu,' ,29','Feb','2024','09:08:00', '+0900']
+            #현재날짜 Thu, 29 Feb 2024 09:00:00 +09:00로 변경하는 작업
+            tempDates = str(post['pubDate']).split(' ') #tempDates라는 변수에 ['Thu,' ,29','Feb','2024','09:0:00', '+0900']
             year = tempDates[3]
             month = time.strptime(tempDates[2],'%b').tm_mon #Feb, Mar 같은 달의 영어 이름을 2,3과 같은 숫자로 변경하는 로직
             month = f'{month:02d}' # 월을 두 자리로 만들 때
@@ -62,7 +65,7 @@ class qtApp(QWidget):
             date = f'{year}-{month}-{day}'
             self.tblSearchResult.setItem(n,2,QTableWidgetItem(f'{date}'))
             n += 1
-            self.tblSearchResult.setColumnWidth(0,465)
+            self.tblSearchResult.setColumnWidth(0,430) #QTable에 가로 스크롤 없애기 위해 넓이 조절
             self.tblSearchResult.setColumnWidth(1,200)
             self.tblSearchResult.setEditTriggers(QAbstractItemView.NoEditTriggers) # 컬럼 더블클릭 금지
             
