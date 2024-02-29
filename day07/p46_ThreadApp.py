@@ -12,13 +12,14 @@ class BackgroundWorker(QThread): #PyQt용 쓰레드
     setPgbSignal = pyqtSignal(int) # 스레드 진행시 변경되는 숫자를 UI로 전달
     setTxbSignal = pyqtSignal(str) # 스레드 진행시 화면에 출력될 문자열 UI쪽으로 전달
     setBtnSignal = pyqtSignal(bool)
+    MessageSignal = pyqtSignal(str)
 
     def __init__(self,parent) -> None: # 부모는 qtApp 클래스
         super().__init__(parent)
         self.parent = parent
 
     def run(self) -> None:
-        maxVal = 1_000
+        maxVal = 10_000
         self.initUiSignal.emit(maxVal) #나는 값을 보내니 Ui쪽(qtApp)에서 받아서 처리해라
         self.setBtnSignal.emit(True)
         for i in range(maxVal):
@@ -27,7 +28,8 @@ class BackgroundWorker(QThread): #PyQt용 쓰레드
             self.setTxbSignal.emit(f'스레드 진행 >> {i}')
 
         self.setBtnSignal.emit(False)
-
+        self.MessageSignal.emit('작업 완료!!!')
+        
             #self.parent.pgbTask.setValue(i) #UI스레드의 권한을 백그라운드 스레드에게 주지 않는다
             #self.parent.txbLog.append(f'스레드 진행 >> {i}') # 사용불가
 
@@ -51,13 +53,19 @@ class qtApp(QWidget):
 
 
     def btnStartClicked(self):
+
+        self.txbLog.clear()
         th = BackgroundWorker(self)
         th.start() # 스레드 내 run() 함수 실행
         th.setBtnSignal.connect(self.setBtn)
         th.initUiSignal.connect(self.initPgbTask)
         th.setPgbSignal.connect(self.setPgbTask)
         th.setTxbSignal.connect(self.setTxbLog)
+        th.MessageSignal.connect(self.openMessagebox)
 
+        
+
+        
         
         
         
@@ -75,6 +83,9 @@ class qtApp(QWidget):
     def setTxbLog(self,msg):
         self.txbLog.append(msg)
 
+    @pyqtSlot(str)
+    def openMessagebox(self,msg):
+        QMessageBox.about(self,'작업 완료!!!',msg)
 
     @pyqtSlot(bool)
     def setBtn(self,isStart):
