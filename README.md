@@ -740,6 +740,7 @@
                 ![Qr코드](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/KangJeongTaekPython2024QrCode.png)
 
             - 번역기 앱
+            
                 ![번역기](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata07.png)
 
 ## 8일차
