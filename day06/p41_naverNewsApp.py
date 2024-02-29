@@ -54,10 +54,10 @@ class qtApp(QWidget):
         for post in result:
             self.tblSearchResult.setItem(n,0,QTableWidgetItem(post['title'].replace('&quot;','"')))
             self.tblSearchResult.setItem(n,1,QTableWidgetItem(post['link']))
-            tempDates = str(post['pubDate']).split(' ')
+            tempDates = str(post['pubDate']).split(' ') #tempDates라는 변수에 ['Thu,' ,29','Feb','2024','09:08:00', '+0900']
             year = tempDates[3]
-            month = time.strptime(tempDates[2],'%b').tm_mon
-            month = f'{month:02d}'
+            month = time.strptime(tempDates[2],'%b').tm_mon #Feb, Mar 같은 달의 영어 이름을 2,3과 같은 숫자로 변경하는 로직
+            month = f'{month:02d}' # 월을 두 자리로 만들 때
             day = tempDates[1]
             date = f'{year}-{month}-{day}'
             self.tblSearchResult.setItem(n,2,QTableWidgetItem(f'{date}'))
