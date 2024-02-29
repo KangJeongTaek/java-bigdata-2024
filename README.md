@@ -746,5 +746,10 @@
                 ![번역기](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata07.png)
 
 ## 8일차
+- ### 파이썬 학습
+
+    - #### 파이썬 응용
+
+        - ##### 파이썬 자동화
 
 ## 9일차
