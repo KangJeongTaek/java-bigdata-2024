@@ -770,5 +770,17 @@
 
                 <!-- ![슬랙message](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata09.png) -->
 
-            - Tesseract 프로그램으로 이미지에서 글자 추출
+            - Tesseract 프로그램으로 이미지에서 글자 추출 (인식율을 높이기 위해서는 직접 트레이닝을 해서 트레이닝 데이터를 만들어야 한다)
+
+                -[테서렉트 설치 파일](https://github.com/UB-Mannheim/tesseract/wiki) 주소
+
+                ![테서렉트 예시](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata10.png)
 ## 9일차
+- ### 파이썬 응용
+    - #### 파이썬 응용
+        - ##### 이미지 처리 OpenCV
+        - ##### 플라스크 웹서버
+        - ##### 그림에디터 만들기
+        - ##### 메모장 만들기
+        - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
+    
