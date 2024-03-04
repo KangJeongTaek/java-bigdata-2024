@@ -685,7 +685,7 @@
                         return False
             ```
 
-            <img scr="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01.gif" width = "600" height = "480">
+            <img scr="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata02.png" width = "600" height = "480">
 
             </img>
 
