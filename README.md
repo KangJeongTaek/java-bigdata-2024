@@ -759,7 +759,7 @@
 
                 <!-- html 태그로 이미지를 삽입하면 문제 없음 -->
 
-                <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata09.png" width ="250">
+                <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata09.jpg" width ="250">
 
 
                 <!-- ![슬랙webhook](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata08.png) -->
