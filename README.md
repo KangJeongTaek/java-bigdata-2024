@@ -755,7 +755,10 @@
 
             - 슬랙 webhook로 모바일 메시지 전송
 
-                ![슬랙webhook](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata08.png)
+                <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata08.png" width="250">
 
-                ![슬랙message](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata09.png)
+
+                <!-- ![슬랙webhook](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata08.png) -->
+
+                <!-- ![슬랙message](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata09.png) -->
 ## 9일차
