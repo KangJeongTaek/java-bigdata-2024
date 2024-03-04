@@ -751,5 +751,11 @@
     - #### 파이썬 응용
 
         - ##### 파이썬 자동화
-            - PyAutoGui 모듈
+            - PyAutoGui 모듈(마웃, 키보드, 화면캡쳐)
+
+            - 슬랙 webhook로 모바일 메시지 전송
+
+                ![슬랙webhook](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata08.png)
+
+                ![슬랙message](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata09.png)
 ## 9일차

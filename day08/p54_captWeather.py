@@ -27,6 +27,8 @@ for region in regions:
     startX, startY = 31,272
     endX,endY = 694,906
     auto.screenshot(f'day08/{region}날씨.png',region=(startX,startY,endX-startX,endY-startY))
+    #img = auto.screenshot(region=(startX,startY,endX-startX,endY-startY))
+    #img.save(f'./day08/{region}날씨.png')
 # clip.copy('부산 용당동 날씨')
 
 # auto.hotkey('ctrl','v')
