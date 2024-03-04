@@ -685,7 +685,9 @@
                         return False
             ```
 
-            ![주소록앱](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01.gif)
+            <img scr="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01.gif" width = "600" height = "480">
+
+            <!-- ![주소록앱](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01.gif) -->
 
         - ##### 윈도우 앱 만들기(Tkinter, PyQt)
             - PyQt5 -> Qt를 파이썬에서 쓸 수 있도록 만든 라이브러리
