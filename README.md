@@ -781,8 +781,15 @@
         - ##### 이미지 처리 OpenCV
             - [윤대희님 깃헙](https://076923.github.io/posts/Python-opencv-1/) 참조
 
-            - ![얼굴 인식](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata11.gif)
-        - ##### 플라스크 웹서버
+            ![얼굴 인식](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata11.gif)
+
+        - ##### 플라스크 Django 웹서버
+            
+            - [Flask](https://flask-docs-kr.readthedocs.io/ko/latest/index.html) 공식 홈페이지
+
+            - [Django](https://developer.mozilla.org/ko/docs/Learn/Server-side/Django) 웹서버
+            
+
         - ##### 그림에디터 만들기
         - ##### 메모장 만들기
         - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
