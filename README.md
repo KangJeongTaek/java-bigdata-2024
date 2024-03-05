@@ -781,8 +781,8 @@
         - ##### 이미지 처리 OpenCV
             - [윤대희님 깃헙](https://076923.github.io/posts/Python-opencv-1/) 참조
 
-            ![얼굴 인식](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata11.gif)
-
+            <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata11.gif" width ="530" height = "320">
+            
         - ##### 플라스크 Django 웹서버
             
             - [Flask](https://flask-docs-kr.readthedocs.io/ko/latest/index.html) 공식 홈페이지
