@@ -91,8 +91,9 @@ class WinApp(QMainWindow): # QWidget이 아님
 
     def actionGrayscaleClicked(self):
         image = self.lblCanvas.pixmap()
-        gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY) # 현재 실행 안 됨
-        self.lblCanvas.setPixmap(gray)
+        #gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY) # 현재 실행 안 됨
+        #self.lblCanvas.setPixmap(gray)
+        QMessageBox.about(self,'알림','그레이스케일')
 
 
     def mouseMoveEvent(self,QMouseEvent) -> None:
