@@ -685,7 +685,7 @@
                         return False
             ```
 
-            <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01.gif" width = "600" height = "480">
+            <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata01.gif" width = "530" height = "320">
 
             </img>
 
@@ -792,7 +792,7 @@
 
         - ##### 그림에디터 만들기
 
-             <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata12.gif" width ="250" height = "310">
+             <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata12.gif" width ="530" height = "320">
 
         - ##### 메모장 만들기
         - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
