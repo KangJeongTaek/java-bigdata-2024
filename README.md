@@ -791,6 +791,9 @@
             
 
         - ##### 그림에디터 만들기
+
+            ![에디터](https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata12.gif)
+
         - ##### 메모장 만들기
         - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
     
