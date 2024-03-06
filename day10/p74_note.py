@@ -109,6 +109,7 @@ class WinApp(QMainWindow):
         re = QMessageBox.question(self,'종료확인','종료하시겠습니까?',QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes:
             self.worker_thread.working = False
+            self.worker_thread.wait()  
             exit(0)
         else:
             QMessageBox.about(self,'취소','종료하지 않습니다.')
@@ -118,6 +119,7 @@ class WinApp(QMainWindow):
         re = QMessageBox.question(self,'종료확인','종료하시겠습니까?',QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes: 
             self.worker_thread.working = False
+            self.worker_thread.wait()  
             QCloseEvent.accept()
         else:
             QCloseEvent.ignore()
