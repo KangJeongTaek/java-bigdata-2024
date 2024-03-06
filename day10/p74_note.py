@@ -12,8 +12,9 @@ class QtBackGroundWorker(QThread):
     def __init__(self, parent):
         super().__init__(parent)
 
+
     def run(self):
-        
+        pass #키보드를 입력받는다면 True를 리턴하라
 
 class WinApp(QMainWindow): # QWidget이 아님
 
