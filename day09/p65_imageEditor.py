@@ -4,6 +4,8 @@
 '''
 qrc 파일을 사용하기 위해서는
 > pyrcc5 "resources.qrc" -o "resoureces_rc.py"
+imutils
+>pip install imutils
 '''
 
 import sys
@@ -15,7 +17,7 @@ from PyQt5.QtWidgets import *
 # 리소스 파일 추가
 import resources_rc
 #OpenCV 추가
-import cv2
+import cv2, imutils
 
 
 class WinApp(QMainWindow): # QWidget이 아님
@@ -25,11 +27,14 @@ class WinApp(QMainWindow): # QWidget이 아님
         self.initSignal()
 
     def initUI(self):
-        uic.loadUi('./day09/pyNewPaint.ui',self)
+        #uic.loadUi('./day09/pyNewPaint.ui',self) # VSCode 용
+        uic.loadUi('G:/Source/java-bigdata-2024/day09/pyNewPaint.ui',self) #PyInstaller 용
         self.setWindowIcon(QIcon('./day09/draw.png'))
+        self.setWindowIcon(QIcon('./draw.png'))
         self.setWindowTitle('이미지 에디터v0.5')
         ## 이미지 추가 / 여러가지 UI에 대한 초기화
-        pixmap = QPixmap('./images/tropical_beach.jpg')
+        #pixmap = QPixmap('./images/tropical_beach.jpg')
+        pixmap = QPixmap('images/tropical_beach.jpg')
         pixmapscaled = pixmap.scaled(801,481)
         self.lblCanvas.setPixmap(pixmapscaled)
 
@@ -72,6 +77,7 @@ class WinApp(QMainWindow): # QWidget이 아님
         pixmap.save(filePath)
 
     def actionExitClicked(self):
+        cv2.destroyAllWindows()
         exit(0)
 
     def actionPenRedClicked(self):
@@ -90,10 +96,16 @@ class WinApp(QMainWindow): # QWidget이 아님
         QMessageBox.about(self,'알림','이미지 에디터 v0.5')
 
     def actionGrayscaleClicked(self):
+        #temPath = './day09/temp.png'
+        temPath = 'temp.png'
         image = self.lblCanvas.pixmap()
+        image.save(temPath)
+        cvImage = cv2.imread(temPath,cv2.IMREAD_UNCHANGED)
+        gray = cv2.cvtColor(cvImage,cv2.COLOR_BGR2GRAY)
+        grayImage = QImage(cvImage,cvImage.shape[1],cvImage.shape[0],cvImage.shape[1]*3,QImage.Format_Grayscale16)
+        self.lblCanvas.setPixmap(QPixmap.fromImage(grayImage))
         #gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY) # 현재 실행 안 됨
         #self.lblCanvas.setPixmap(gray)
-        QMessageBox.about(self,'알림','그레이스케일')
 
 
     def mouseMoveEvent(self,QMouseEvent) -> None:
@@ -112,6 +124,7 @@ class WinApp(QMainWindow): # QWidget이 아님
     def closeEvent(self,QCloseEvent):
         re = QMessageBox.question(self,'종료','종료하시겠습니까?',QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes:
+            cv2.destroyAllWindows()
             QCloseEvent.accept()
         else:
             QCloseEvent.ignore()

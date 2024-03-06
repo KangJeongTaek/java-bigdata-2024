@@ -794,6 +794,13 @@
 
              <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata12.gif" width ="530" height = "320">
 
+        - ##### 실행 파일 만들기
+            - PyInstaller 모듈 설치
+            '''shell
+            >pip install pyinstaller
+            >pyinstaller -w -F pythonfile.py
+            '''
+
         - ##### 메모장 만들기
         - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
     
