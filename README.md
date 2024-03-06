@@ -802,6 +802,9 @@
 
             - MP4로 동영상 업로드 하기 위해서는 github사이트에서 Readme.md를 수정 클릭 후 mp4를 드래그(제한 사항 : 10MB 이하)
 
+                https://github.com/KangJeongTaek/java-bigdata-2024-Python/assets/158122796/101947d3-b8c3-4d91-993b-09e9413e6d45
+
+
         - ##### 실행 파일 만들기
 
             - PyInstaller 모듈 설치
