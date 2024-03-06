@@ -822,7 +822,7 @@
 
             - 노트북 사용
 
-            - [쥬피터 노트북](https://github.com/KangJeongTaek/java-bigdata-2024-Python/tree/94cad569daceed0a892218fbc56dbedfd6e67893/day10)이 포함된 day10 디렉토리
+                - [쥬피터 노트북](https://github.com/KangJeongTaek/java-bigdata-2024-Python/tree/94cad569daceed0a892218fbc56dbedfd6e67893/day10)이 포함된 day10 디렉토리
 
         - ##### ChatGPT
     
