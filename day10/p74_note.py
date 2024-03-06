@@ -9,6 +9,12 @@ import keyboard
 class QtBackGroundWorker(QThread):
     initUiSignal = pyqtSignal(bool)
 
+    def __init__(self, parent):
+        super().__init__(parent)
+
+    def run(self):
+        
+
 class WinApp(QMainWindow): # QWidget이 아님
 
 
