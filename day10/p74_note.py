@@ -16,7 +16,7 @@ class QtBackGroundWorker(QThread):
         previousTxt = self.parent.plainTextEdit.toPlainText()
         self.working = True
 
-        while self.working:
+        while self.working: 
             currentTxt  = self.parent.plainTextEdit.toPlainText()
             if previousTxt != currentTxt:
                 self.textChanged.emit()
