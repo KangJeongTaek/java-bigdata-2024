@@ -819,7 +819,9 @@
         - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
 
             - Ctrl + Shift + P (명령 팔레트)
-            
+
+                - [쥬피터 노트북](https://github.com/KangJeongTaek/java-bigdata-2024-Python/tree/94cad569daceed0a892218fbc56dbedfd6e67893/day10)
+
             - 노트북 사용
 
         - ##### 메모장 만들기
