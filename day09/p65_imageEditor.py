@@ -28,7 +28,7 @@ class WinApp(QMainWindow): # QWidget이 아님
 
     def initUI(self):
         #uic.loadUi('./day09/pyNewPaint.ui',self) # VSCode 용
-        uic.loadUi('G:/Source/java-bigdata-2024/day09/pyNewPaint.ui',self) #PyInstaller 용
+        uic.loadUi('./pyNewPaint.ui',self) #PyInstaller 용
         self.setWindowIcon(QIcon('./day09/draw.png'))
         self.setWindowIcon(QIcon('./draw.png'))
         self.setWindowTitle('이미지 에디터v0.5')

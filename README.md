@@ -794,13 +794,27 @@
 
              <img src="https://github.com/KangJeongTaek/java-bigdata-2024-Python/blob/main/images/bigdata12.gif" width ="530" height = "320">
 
+
+## 10일차
+- ### 파이썬 응용
+    - #### 파이썬 응용
+        - ##### 그림 에디터 완성(그레이스케일)
+
+            - MP4로 동영상 업로드 하기 위해서는 github사이트에서 Readme.md를 수정 클릭 후 mp4를 드래그(제한 사항 : 10MB 이하)
+
         - ##### 실행 파일 만들기
+
             - PyInstaller 모듈 설치
-            '''shell
-            >pip install pyinstaller
-            >pyinstaller -w -F pythonfile.py
-            '''
+                - -w는 윈도우 창만 실행 콘솔창 삭제, -F _internal 폴더 생성안 되도록 파일 하나로 생성해줌
+                - 실패, 재생성시는 build, dist 폴더 삭제, pythonfile.spec 삭제 뒤 다시 명령어 실행
+                '''shell
+                >pip install pyinstaller
+                >pyinstaller -w -F pythonfile.py
+                '''
+
 
         - ##### 메모장 만들기
+
         - ##### Jupyter Notebook(빅데이터 분석, 코딩테스트)
+
     
