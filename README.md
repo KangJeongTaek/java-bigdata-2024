@@ -825,4 +825,11 @@
                 - [쥬피터 노트북](https://github.com/KangJeongTaek/java-bigdata-2024-Python/tree/94cad569daceed0a892218fbc56dbedfd6e67893/day10)이 포함된 day10 디렉토리
 
         - ##### ChatGPT
+
+            - Error code:429
+
+        - ##### 메모장 만들기
+        
+            - [유튜브](https://www.youtube.com/watch?v=6jPXGgON6oU&list=PLnIaYcDMsScwsKo1rQ18cLHvBdjou-kb5&index=5) 링크 1번
+            - [유튜브](https://pagichacha.tistory.com/44) 링크 2번
     
