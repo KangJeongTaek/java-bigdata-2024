@@ -16,18 +16,19 @@ class QtBackGroundWorker(QThread):
         previousTxt = self.parent.plainTextEdit.toPlainText()
         self.working = True
 
-        while self.working: 
+        while self.working:
             currentTxt  = self.parent.plainTextEdit.toPlainText()
             if previousTxt != currentTxt:
                 self.textChanged.emit()
 
             previousTxt = currentTxt
-            self.usleep(100*1000)
+            self.usleep(100000)
+
     def stop(self):
         self.working = False
         self.quit()
 
-class WinApp(QMainWindow): 
+class WinApp(QMainWindow):
 
 
 
@@ -44,6 +45,8 @@ class WinApp(QMainWindow):
 
 
         self.show()
+        global textPath, filePath
+        textPath,filePath = ['','']
         self.worker_thread = QtBackGroundWorker(self)
         self.worker_thread.textChanged.connect(self.updateWindowTitle)
         self.worker_thread.start()
@@ -57,7 +60,7 @@ class WinApp(QMainWindow):
         self.action_About.triggered.connect(self.action_About_Clicked)
         self.action_E_Exit.triggered.connect(self.action_Exit_clicked)
         
-
+    @pyqtSlot()
     def updateWindowTitle(self):
         title = self.windowTitle()
         if '*' not in title:
@@ -89,7 +92,10 @@ class WinApp(QMainWindow):
                     self.setWindowTitle(self.windowTitle().rstrip('*'))
         except NameError:
             self.actionSave_as_Clicked()
+        except FileNotFoundError:
+            self.actionSave_as_Clicked()
 
+        
     def actionSave_as_Clicked(self):
         global filePath
         filePath, _ = QFileDialog.getSaveFileName(self,'텍스트 저장','','Txt file(*.txt)')
@@ -108,18 +114,18 @@ class WinApp(QMainWindow):
     def action_Exit_clicked(self):
         re = QMessageBox.question(self,'종료확인','종료하시겠습니까?',QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes:
-            self.worker_thread.working = False
-            self.worker_thread.wait()  
+            self.worker_thread.stop()
+            self.worker_thread.wait()
             exit(0)
         else:
             QMessageBox.about(self,'취소','종료하지 않습니다.')
 
 
-    def closeEvent(self, QCloseEvent): 
+    def closeEvent(self, QCloseEvent):
         re = QMessageBox.question(self,'종료확인','종료하시겠습니까?',QMessageBox.Yes|QMessageBox.No)
-        if re == QMessageBox.Yes: 
-            self.worker_thread.working = False
-            self.worker_thread.wait()  
+        if re == QMessageBox.Yes:
+            self.worker_thread.stop()
+            self.worker_thread.wait()
             QCloseEvent.accept()
         else:
             QCloseEvent.ignore()
